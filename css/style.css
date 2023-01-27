@@ -1,4 +1,186 @@
-h1{
-    color: red;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,700&family=Poor+Story&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: 'Noto Serif', serif; 
+    background-color: rgb(2, 2, 2);
+    color: aliceblue;
+}
+header {
+    width: 100%;
+    height: 20vh;
+    background-color: rgb(28, 129, 211);
+    display: flex;
+    align-items: center;
+}
+header img {
+    width: 150px;   
+    height: 100px;
+}
+header nav {
+    display: inline-block;
+    
+}
+header nav li {
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+    
+}
+header nav ul li a {
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.inicial {
+    background-image: url("../Img/Fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;
+    width: 100%;
+    height: 90vh;
+    color: rgb(22, 56, 85);
+    text-align: center;
+}
+.inicial h1 {
+    font-size: 100px;
+}
+.inicial h2 {
+    font-size: 40px;
+}
+.mensualidades h2 {
+    text-align: center;
+}
+.contenedor {
+    display: flex;
+    width: 100%; 
+    margin: 0px;
+    padding: 0px; 
+    justify-content: space-around;
+}
+.contenedor div {
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    height: 600px;
+    border: 3px solid rgb(247, 247, 247);
+    text-align: center;
+    display: inline-block;    
+}
+.mensualidades div img {
+    height: 400px;
+    width: 300px;
+    
+}
+.invitacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.invitacion div {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    height: auto;
+    width: 50%;
+}
+footer {
+    width: 100%;
+    height: auto;
+    background-color: rgb(28, 129, 211);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
+}
+footer div {
+
+    display: inline-block;
+    font-size: 15px;
+    color: aliceblue;
+    margin: 0px 0px 0px 10px;
+}
+.redes a img {
+    width: 70px;
+    height: 70px;
+    background-color: rgb(28, 129, 211);
+}
+.convenios-titulo {
+    width: 100%;
+    height: 40vh;
+    background-image: url("../Img/convenio.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;
+    text-align: center;
+    color: black;
+}
+.convenios div {
+    display: inline-block;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid blanchedalmond;
+    color: black;
+
+}
+.piscinaT {
+    background-image: url("../Img/piscinaTe.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;     
+}
+.piscinaO {
+    background-image: url("../Img/pisicinaO.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+.safeti {
+    background-image: url("../Img/piscinaTe.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+.alcaldiaP {
+    background-image: url("../Img/alcaldiaP.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+.alcaldiaD {
+    background-image: url("../Img/alcaldiaD.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+.cicleria { 
+    background-image: url("../Img/cicleria.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+.pista {
+    background-image: url("../Img/pista.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+.clinica {
+    background-image: url("../Img/Salud-del-tundama.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
 }
