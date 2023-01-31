@@ -1,186 +1,413 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,700&family=Poor+Story&display=swap');
-*{
+* {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
+
 body {
-    font-family: 'Noto Serif', serif; 
-    background-color: rgb(2, 2, 2);
+    font-family: 'Noto Serif', serif;
+    background: rgb(16,6,54);
+background: linear-gradient(90deg, rgba(16,6,54,1) 44%, rgba(88,74,194,1) 100%);
     color: aliceblue;
 }
+
 header {
+    padding: auto;
     width: 100%;
-    height: 20vh;
-    background-color: rgb(28, 129, 211);
-    display: flex;
-    align-items: center;
-}
-header img {
-    width: 150px;   
-    height: 100px;
-}
-header nav {
-    display: inline-block;
-    
-}
-header nav li {
-    list-style: none;
-    display: inline-block;
-    text-decoration: none;
-    
-}
-header nav ul li a {
-    margin: 10px;
-    text-align: center;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-header ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    background-color: aliceblue; 
 }
 .inicial {
     background-image: url("../Img/Fondo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     background-attachment: fixed;
     width: 100%;
     height: 90vh;
     color: rgb(22, 56, 85);
     text-align: center;
 }
+
 .inicial h1 {
     font-size: 100px;
 }
+
 .inicial h2 {
     font-size: 40px;
 }
+
 .mensualidades h2 {
     text-align: center;
 }
-.contenedor {
-    display: flex;
-    width: 100%; 
-    margin: 0px;
-    padding: 0px; 
-    justify-content: space-around;
-}
-.contenedor div {
+.grid-item {
     margin: 10px;
     padding: 10px;
-    width: 300px;
-    height: 600px;
+    width: 320px;
+    height: 700px;
     border: 3px solid rgb(247, 247, 247);
     text-align: center;
-    display: inline-block;    
+}
+.grid-item a {
+    color: aliceblue;
+    border: 1px solid beige ;
+    text-decoration: none;
+    font-size: 20px
+}
+.planes{
+    width: 100%;
+    padding: auto;
+    background-color: aliceblue;
+    color: black ;
+
 }
 .mensualidades div img {
     height: 400px;
     width: 300px;
-    
+
 }
-.invitacion {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.invitacion div {
-    text-align: center;
-    margin: 10px;
-    padding: 10px;
-    height: auto;
-    width: 50%;
-}
+
 footer {
     width: 100%;
     height: auto;
-    background-color: rgb(28, 129, 211);
+    background-color: rgb(244, 244, 244);
     display: flex;
     align-items: center;
     justify-content: space-between;
 
 }
+
 footer div {
 
     display: inline-block;
-    font-size: 15px;
-    color: aliceblue;
-    margin: 0px 0px 0px 10px;
+    font-size: 10px;
+    color: rgb(0, 0, 0);
+    margin: 0px 0px 0px 20px;
 }
+
 .redes a img {
     width: 70px;
     height: 70px;
     background-color: rgb(28, 129, 211);
+    margin:20px;
 }
+
 .convenios-titulo {
     width: 100%;
     height: 40vh;
-    background-image: url("../Img/convenio.jpg");
+    background-image: url("../Img/convenio.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     background-attachment: fixed;
     text-align: center;
-    color: black;
-}
-.convenios div {
-    display: inline-block;
-    text-align: center;
-    height: 300px;
-    width: 300px;
-    margin: 10px;
-    padding: 10px;
-    border: 3px solid blanchedalmond;
-    color: black;
-
+    color: rgb(22, 56, 85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .piscinaT {
     background-image: url("../Img/piscinaTe.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;     
+    background-position: center;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    border: 3px solid blanchedalmond;
+    color: black;
+    gap: 20px;
+
+    transition: all;
+    transition-duration: 2s;
 }
+
 .piscinaO {
     background-image: url("../Img/pisicinaO.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; 
+    background-position: center;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    border: 3px solid blanchedalmond;
+    color: black;
+    gap: 20px;
+
+    transition: all;
+    transition-duration: 2s;
 }
+
 .safeti {
     background-image: url("../Img/piscinaTe.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; 
+    background-position: center;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    border: 3px solid blanchedalmond;
+    color: black;
+    gap: 20px;
+    transition: all;
+    transition-duration: 2s;
 }
+
 .alcaldiaP {
     background-image: url("../Img/alcaldiaP.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; 
+    background-position: center;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    border: 3px solid blanchedalmond;
+    color: black;
+    gap: 20px;
+    transition: all;
+    transition-duration: 2s;
 }
+
 .alcaldiaD {
     background-image: url("../Img/alcaldiaD.jfif");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; 
+    background-position: center;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    border: 3px solid blanchedalmond;
+    color: black;
+    gap: 20px;
+    transition: all;
+    transition-duration: 2s;
 }
-.cicleria { 
+
+.cicleria {
     background-image: url("../Img/cicleria.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; 
+    background-position: center;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    border: 3px solid blanchedalmond;
+    color: black;
+    gap: 20px;
+    transition: all;
+    transition-duration: 2s;
 }
+
 .pista {
     background-image: url("../Img/pista.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; 
+    background-position: center;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    border: 3px solid blanchedalmond;
+    color: black;
+    gap: 20px;
+    transition: all;
+    transition-duration: 2s;
 }
+
 .clinica {
     background-image: url("../Img/Salud-del-tundama.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; 
+    background-position: center;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    border: 3px solid blanchedalmond;
+    color: black;
+    gap: 20px;
+    transition: all;
+    transition-duration: 2s;
 }
+/* GRID*/  
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    justify-items: center;
+    
+}
+@media screen and (max-width: 950px){
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+
+}
+@media screen and (max-width:450px) {
+    h1 {
+        font-size: 10px;
+    }
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+    }
+}
+.grid-invitaciones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    margin-left: 10px;
+    justify-items: center;
+    text-align: center;
+    font-size: 20px;
+    height: 100%;
+    width: auto;
+}
+.invitacion div a {
+    color: aliceblue;
+    border: 1px solid beige ;
+    text-decoration: none;
+    font-size: 20px;
+}
+@media screen and (max-width:450px) {
+    .grid-invitaciones {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+    }
+    .invitacion-sec img{
+        height: 300px;
+        width: auto;
+        justify-items: center;
+    }
+    .invitacion-sec {
+        height: auto;
+        width: 300px;
+    }
+}
+@media screen and (max-width: 950px){
+    .grid-invitaciones {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+    .invitacion-sec img{
+        height: 300px;
+        width: auto;
+        justify-items: center;
+    }
+    .invitacion-sec {
+        height: auto;
+        width: 300px;
+    }
+}
+main a {
+    transition: all;
+    transition-duration: 0.5s;
+}
+main a:hover {
+    border: solid 2px red;
+}
+.piscinaT:hover {
+    background: aliceblue;
+    border: solid 10px rgb(16, 5, 59);
+    width: 105%;
+}
+
+.piscinaO:hover {
+    background: aliceblue;
+    border: solid 10px rgb(16, 5, 59);
+    width: 100%;
+}
+
+.safeti:hover {
+    background: aliceblue;
+    border: solid 10px rgb(16, 5, 59);
+    width: 105%;
+}
+.alcaldiaP:hover {
+    background: aliceblue;
+    border: solid 10px rgb(16, 5, 59);
+    width: 105%;
+}
+
+.alcaldiaD:hover {
+    background: aliceblue;
+    border: solid 10px rgb(16, 5, 59);
+    width: 105%;
+}
+
+.cicleria:hover {
+    background: aliceblue;
+    border: solid 10px rgb(16, 5, 59);
+    width: 105%;
+}
+
+.pista:hover{
+    background: aliceblue;
+    border: solid 10px rgb(16, 5, 59);
+    width: 105%;
+}
+
+.clinica:hover{
+    background: aliceblue;
+    border: solid 10px rgb(16, 5, 59);
+    width: 105%;
+}
+.form-titulo{
+    text-align: center;
+    padding: 10px;
+    
+}
+.form-titulo img{
+    align-items: center;
+    width: 350PX;
+    height: 250PX;
+    
+}
+.formulario form {
+    display: inline-block;
+    width: auto;
+    margin-left: 30px;
+}
+.carrusel {
+    margin: 80px;
+}
+.carrusel img {
+    height: 500px; 
+    
+}
+.nosotros div {
+    text-align: center ;
+    margin: 20px;
+    padding: 10px;
+}
+.nosotros div img {
+    width: 450px;
+    height: 450px;
+}
+.entrenadores {
+    text-align: center;
+}
+.entrenadores img {
+    width: 450px;
+    height: 400px;
+}
+.galeria img {
+    width: 400px;
+    height: 400px;
+}
+.galeria div {
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+}
+video {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    border: 1px solid black;
+    transform: rotate(-90deg) ;
+    
+  }
+  
+  
