@@ -245,24 +245,41 @@ footer div {
 }
 @media screen and (max-width:450px) {
     h1 {
-        font-size: 10px;
+        display: none;
     }
     .grid-container {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: auto;
     }
+    .invitacion div img {
+        height: 430px;
+        width: 310px;
+    }
+    
 }
-.grid-invitaciones {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    gap: 10px;
-    margin-left: 10px;
-    justify-items: center;
-    text-align: center;
+@media screen and (max-width: 350px) {
+    .invitacion div img {
+        height: 310px;
+        width: 310px;
+
+    }
+    .invitacion div {
+        width: 310px;
+    
+    }
+    
+}
+.invitacion div {
+    width: 500px;
+
+}
+.invitacion {
+    display: flex;
+    justify-content: space-around;
     font-size: 20px;
-    height: 100%;
-    width: auto;
+    text-align: center;
+    margin: 10px;
+    flex-wrap: wrap;
 }
 .invitacion div a {
     color: aliceblue;
@@ -270,11 +287,8 @@ footer div {
     text-decoration: none;
     font-size: 20px;
 }
+/*
 @media screen and (max-width:450px) {
-    .grid-invitaciones {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: auto;
-    }
     .invitacion-sec img{
         height: 300px;
         width: auto;
@@ -286,10 +300,6 @@ footer div {
     }
 }
 @media screen and (max-width: 950px){
-    .grid-invitaciones {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-    }
     .invitacion-sec img{
         height: 300px;
         width: auto;
@@ -300,6 +310,7 @@ footer div {
         width: 300px;
     }
 }
+*/
 main a {
     transition: all;
     transition-duration: 0.5s;
