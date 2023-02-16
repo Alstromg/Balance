@@ -1,0 +1,35 @@
+$colo-titulo: black;
+$color-secundario: aliceblue;
+
+%flex{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+}
+%hover{
+    color: $color-secundario;
+    border: 1px solid $color-secundario;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all;
+    transition-duration: 0.5s;
+}
+%hover-cajas{
+    background: aliceblue;
+    border: solid 10px rgb(16, 5, 59);
+    scale: 1.1;
+}
+%cajas{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    border: 3px solid blanchedalmond;
+    color: black;
+    gap: 20px;
+    transition: all;
+    transition-duration: 2s;
+}

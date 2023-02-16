@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,700&family=Poor+Story&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Serif', serif;
+background: linear-gradient(90deg, rgba(16,6,54,1) 44%, rgba(88,74,194,1) 100%);
+    color: aliceblue;
+}
+header {
+    padding: auto;
+    width: 100%;
+    background-color: aliceblue; 
+}
+.producto {
+    margin: 10px;
+    padding: 10px;
+    width: 320px;
+    height: 700px;
+    border: 3px solid aliceblue;
+    text-align: center;
+    img {
+        height: 400px;
+        width: 300px;
+    }
+    a {
+        @extend %hover;
+        &:hover{
+            border: solid 2px red;
+            }
+    }
+}

@@ -1,0 +1,67 @@
+
+@media screen and (max-width:880px) {
+    video {
+        height: 550px;
+        width: 310px;   
+        }
+}
+@media screen and (max-width: 800px) {
+    .galeriaEntrenamientos{
+        .galeria{
+            grid-template-columns: repeat(6,1fr);
+            grid-auto-rows: 250px;
+            gap: 15px;
+    
+        .img8{
+            grid-column: span 6;
+            grid-row: span 3;
+        }
+        }
+        }
+    .nosotros div img {
+            width: 420px;
+            height: 400px;
+    }    
+    }        
+@media screen and (max-width:450px) {
+    h1 {
+        display: none;
+    }
+    .invitacion div img {
+        height: 430px;
+        width: 310px;
+    }
+    .galeriaEntrenamientos{
+        .galeria{
+        .img8{
+            grid-column: span 6;
+            grid-row: span 1;
+        }
+        }
+        } 
+    .nosotros div img {
+        width: 320px;
+        height: 300px;
+    }
+    .tituloNosotros h2 {
+        font-size: 15px;
+    }
+} 
+@media screen and (max-width: 350px) {
+    .invitacion div img {
+        height: 310px;
+        width: 310px;
+
+    }
+    .invitacion div {
+        width: 310px;
+    }
+    video {
+        height: 300px;
+        width: 300px;
+    }
+    .entrenadoresSec div img {
+    width: 340px;
+    height: 310px;
+    }
+}
