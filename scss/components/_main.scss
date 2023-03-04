@@ -95,7 +95,7 @@
 }
 
 .safeti {
-    background-image: url("../Img/piscinaTe.jpg");
+    background-image: url("../Img/safeti.png");
     @extend %cajas;
     &:hover{
         @extend %hover-cajas;
@@ -143,7 +143,7 @@
 }
 /*---------entrenadores---------- */
 .entrenadores {
-    h2{
+    h1{
     text-align: center;
     color: $color-secundario;
     }
@@ -234,6 +234,9 @@
                 height: 50vh;
             }
         }
+        h1 {
+            text-align: center;
+        }
     }
 }
 .tituloNosotros {
@@ -258,4 +261,18 @@
         color: red;
     }
     }
+}
+.form-titulo {
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    h1{ 
+        background: black;
+    }
+    video {
+    width: 850px;
+    max-width: 350px;
+    height: auto;
+    transform: rotate(-90deg) ;   
+}
 }

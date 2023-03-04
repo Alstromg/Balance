@@ -130,7 +130,7 @@ header {
   background-image: url("../Img/pisicinaO.jpeg"); }
 
 .safeti {
-  background-image: url("../Img/piscinaTe.jpg"); }
+  background-image: url("../Img/safeti.png"); }
 
 .alcaldiaP {
   background-image: url("../Img/alcaldiaP.jpg"); }
@@ -148,7 +148,7 @@ header {
   background-image: url("../Img/Salud-del-tundama.jpg"); }
 
 /*---------entrenadores---------- */
-.entrenadores h2 {
+.entrenadores h1 {
   text-align: center;
   color: aliceblue; }
 
@@ -224,6 +224,8 @@ header {
     text-align: center; }
   .carrusel div div img {
     height: 50vh; }
+  .carrusel div h1 {
+    text-align: center; }
 
 .tituloNosotros h2 {
   background-color: black;
@@ -240,6 +242,18 @@ header {
   .nosotros div a {
     text-decoration: none;
     color: red; }
+
+.form-titulo {
+  text-align: center;
+  margin: auto;
+  align-items: center; }
+  .form-titulo h1 {
+    background: black; }
+  .form-titulo video {
+    width: 850px;
+    max-width: 350px;
+    height: auto;
+    transform: rotate(-90deg); }
 
 footer {
   width: 100%;
@@ -275,7 +289,10 @@ footer {
       grid-row: span 3; }
   .nosotros div img {
     width: 420px;
-    height: 400px; } }
+    height: 400px; }
+  .form-titulo video {
+    height: 450px;
+    width: 350px; } }
 
 @media screen and (max-width: 450px) {
   h1 {
@@ -290,7 +307,15 @@ footer {
     width: 320px;
     height: 300px; }
   .tituloNosotros h2 {
-    font-size: 15px; } }
+    font-size: 15px; }
+  .form-titulo video {
+    height: 300px;
+    width: 300px; }
+  footer .redes a img {
+    width: 50px;
+    height: 50px;
+    background-color: #1c81d3;
+    margin: 10px; } }
 
 @media screen and (max-width: 350px) {
   .invitacion div img {
@@ -298,9 +323,6 @@ footer {
     width: 310px; }
   .invitacion div {
     width: 310px; }
-  video {
-    height: 300px;
-    width: 300px; }
   .entrenadoresSec div img {
     width: 340px;
     height: 310px; } }
